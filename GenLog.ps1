@@ -39,8 +39,3 @@ for ($i = 0; $i -lt 500; $i++) {
 }
 
 Write-Host "✅ Sample log file generated at: $logFilePath"
-
-
-Invoke-PS2EXE -InputFile .\LogReader.ps1 -OutputFile .\LogViewer.exe -NoConsole -IconFile ".\icon.ico" -Title "Log Reader" 
-
-[Convert]::ToBase64String([IO.File]::ReadAllBytes(".\magnify_search.gif")) | Set-Content ".\search-doc.b64"
